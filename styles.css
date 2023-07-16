@@ -1,0 +1,269 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  background-color: rgb(217, 217, 217);
+}
+
+.left-side {
+  width: 30%;
+  height: auto;
+  padding-top: 3%;
+}
+
+.right-side {
+  width: 70%;
+  height: 100px;
+}
+
+.left-side .user-box {
+  width: 80%;
+  height: 40%;
+  margin: auto;
+}
+
+.left-side .user-box>div {
+  width: 100%;
+
+  border: 0.5px solid white;
+  text-align: center;
+  color: #fff;
+}
+
+.left-side .user-box>div>div {
+  width: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.left-side .user-box>:first-child {
+  border-radius: 20px 20px 0px 0px;
+  border: 0px 0px 1px 0px;
+  background-color: rgb(112, 112, 112);
+  border-bottom: none;
+}
+
+.left-side .user-box>:last-child {
+  border-radius: 0px 0px 20px 20px;
+  border: 0px 0px 1px 0px;
+  background-color: black;
+  border-top: none;
+}
+.left-side .user-box>:nth-child(3) ,.left-side .user-box>:nth-child(4),.left-side .user-box>:nth-child(5){
+  border-top: none;
+}
+.tabs-2 {
+  background-color: black;
+  padding: 7%;
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+.right-side {
+  width: 70%;
+  height: auto;
+}
+
+.Header {
+  width: 95%;
+  display: flex;
+  padding-top: 2%;
+
+}
+
+.Header .header-box {
+  width: 16.6%;
+  height: 53px;
+  top: 200px;
+  left: 648px;
+  border: 0px 1px 0px 0px;
+  border: 1px solid rgb(238, 238, 242);
+  padding: 2%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+
+}
+
+.Header>div:first-child {
+  border-radius: 50px 0px 0px 50px;
+  border: 1px;
+  background-color: rgb(112, 112, 112);
+  
+
+}
+.Header>div:nth-child(2),
+.Header>div:nth-child(3),
+.Header>div:nth-child(4){
+ border-right: none ;
+  
+
+}
+.Header-First {
+  background-color: black;
+}
+
+.Header>div:last-child {
+  border-radius: 0px 50px 50px 0px;
+  border: 1px;
+  background-color: rgb(112, 112, 112);
+  ;
+
+}
+
+.activity-information {
+  width: 95%;
+  height: 1000px;
+  margin-top: 3%;
+  left: 512px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.activity-information>div {
+  padding: 5%;
+}
+
+.Heading-activity {
+  width: 50%;
+  height: 60px;
+  font-family: sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+.Content{
+  font-family: Matter;
+font-size: 20px;
+font-weight: 400;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+
+.list-box{
+  width: 100%;
+  height: 199px;
+  display: flex;
+  margin-top: 5%;
+}
+
+.list-box>div{
+  width: 182px;
+  height: 199px;
+  top: 699px;
+  
+  margin-left:3%;
+}
+
+.tabs-ul li {
+  padding: 10px;
+  font-family: sans-serif;
+}
+
+
+.list-box>div:nth-child(3){
+color:red;
+margin-left: 10%;
+}
+
+.list-box>div:nth-child(2){
+  
+  margin-left: 10%;
+  }
+  
+  .slider {
+    width: 100%;
+    overflow: hidden !important;
+  
+  }
+  
+  .slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide {
+    flex: 0 0 calc(75% / 3);
+    width: calc(70% / 3);
+  }
+  
+  .box {
+    height: 200px;
+    margin: 10px;
+  }
+  .box img{
+    width: 100%;
+    height: 100%;
+  }
+  .bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .bullet {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .bullet.active {
+    background-color: #8d2222;
+  }
+@media screen and (max-width:760px) {
+  .main-container {
+    width: 100%;
+    height: 1000px;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(217, 217, 217);
+    margin: auto;
+  }
+
+  .left-side {
+    width: 100%;
+    height: auto;
+    padding-top: 3%;
+  }
+
+  .right-side {
+    width: 70%;
+    border: 1px solid rgb(182, 67, 67);
+    margin: auto;
+  }
+
+
+}
+@media screen and (max-width:1500px) {
+  .main-container { 
+    width: 100%;
+}}
